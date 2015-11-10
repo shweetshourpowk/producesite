@@ -1,7 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: rmccr_000
- * Date: 11/3/2015
- * Time: 5:44 PM
- */ 
+//define parameters
+$host = "localhost";
+$login = "phpuser";
+$password = "phpuser";
+$database = "producesite";
+
+//connect to the mysql server
+$conn = @new mysqli($host, $login, $password, $database);
+
+//handle connection errors
+if ($conn->connect_errno != 0){
+    $errno = $conn->connect_errno;
+    $errmsg = $conn->connect_error;
+    die("Connection failed with: ($errno) $errmsg.");
+}
