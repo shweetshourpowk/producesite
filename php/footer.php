@@ -1,12 +1,10 @@
 
-<tr>
-    <td align="center">
+    <footer align="center">
         <hr />
         <?php
         echo date("l, F d, Y", time());
         ?>
-    </td>
-</tr>
+    </footer>
 </div>
 
 </body>

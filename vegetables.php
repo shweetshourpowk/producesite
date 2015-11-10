@@ -4,7 +4,7 @@ $page_title = "Vegetables";
 
 require_once ('php/header.php');
 require_once('php/connect.php');
-$sql = "SELECT * FROM vegetables";
+$sql = "SELECT vegetables.id, vegetables.vegetable, vegetables.description, vegetables.upc, supplier.name FROM vegetables, supplier WHERE vegetables.supplier_id=supplier.supplier_id";
 //execute the query
 $query = $conn->query($sql);
 
@@ -34,10 +34,10 @@ if (!$query) {
         while (($row = $query->fetch_assoc())!==NULL){
             echo "<tr>";
             echo "<td><a href=vegetabledetails.php?id=",$row['id'], ">",
-            $row['name'],"</a></td>";
+            $row['vegetable'],"</a></td>";
             echo "<td>",$row['description'], "</td>";
             echo "<td>",$row['upc'], "</td>";
-            echo "<td>",$row['supplier_id'], "</td>";
+            echo "<td>",$row['name'], "</td>";
             echo "</tr>";
         }
         ?>

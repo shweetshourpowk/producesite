@@ -1,20 +1,42 @@
+/*#1e690b*/
+/*#59a944*/
+/*#398a24*/
+
+
+
+
 #wrapper {
     margin: 0 auto;
-    width: 960px;
+    width: 1060px;
     min-height: 100%;
-    background-color: brown;
+    background-color: #1e690b;
     padding: 10px;
+    color: #cdcab9;
 }
 
 #content {
 }
 
-a {
+nav {
+    background-color: #59a944;
+    height: 50px;
+}
 
+nav a{
+    margin-left: 5px;
+    padding: 10px;
+    line-height: 50px;
+    background-color: #1e690b;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 a:hover {
-
+    color: #1e690b;
+    background-color: #000000;
 }
 
 a:visited {
