@@ -13,7 +13,7 @@ if(!filter_has_var(INPUT_GET, 'id')){
 $vegetable_id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
 
 //select statement
-$sql = "SELECT * FROM vegetables WHERE id=" . $vegetable_id;
+$sql = "SELECT vegetables.id, vegetables.vegetable, vegetables.description, vegetables.upc, supplier.name FROM vegetables, supplier WHERE vegetables.supplier_id=supplier.supplier_id AND vegetables.id= " . $vegetable_id;
 
 //execute the query
 $query = $conn->query($sql);
@@ -40,10 +40,10 @@ if (!$query) {
 
     <h2>Vegetable Details</h2>
 
-    <table class="userlist">
+    <table class="vegetablelist">
         <tr>
             <th>Vegetable</th>
-            <td><?php echo $row['name']?></td>
+            <td><?php echo $row['vegetable']?></td>
         </tr>
         <tr>
             <th>Description</th>
@@ -55,11 +55,15 @@ if (!$query) {
         </tr>
         <tr>
             <th>Supplier</th>
-            <td><?php echo $row['supplier_id']?></td>
+            <td><?php echo $row['name']?></td>
         </tr>
 
     </table>
+    <script src="js/script.js"></script>
 
+    <p id="delete-buttons">
+        <input type="button" value="  Delete Veggie  " onclick="confirm_deletion(<?php echo $vegetable_id ?>)">
+    </p>
     <p><a href="vegetables.php">Back to Vegetables</a></p>
 
 <?php

@@ -4,8 +4,7 @@ $page_title = "Vegetables";
 
 require_once ('php/header.php');
 require_once('php/connect.php');
-$sql = "SELECT vegetables.id, vegetables.vegetable, vegetables.description, vegetables.upc, supplier.name FROM vegetables, supplier WHERE vegetables.supplier_id=supplier.supplier_id";
-//execute the query
+$sql = "SELECT vegetables.id, vegetables.vegetable, vegetables.description, vegetables.upc, supplier.name FROM vegetables, supplier WHERE vegetables.supplier_id=supplier.supplier_id";//execute the query
 $query = $conn->query($sql);
 
 //Handle selection errors
@@ -43,7 +42,7 @@ if (!$query) {
         ?>
     </table>
 
-
+<button><a href="addveggie.php">Add veggie</a></button>
 
     <!-- all content goes in between these two tags -->
     <script src="js/script.js"></script>
