@@ -226,7 +226,7 @@ hr {
 #header-wrapper
 {
 	overflow: hidden;
-	background: url(images/bg01.png) repeat;
+	background: url(images/Vegetables.jpg) repeat;
 	background-size: 100%;
 	padding: 6em 0em 2em 0em;
 	background: #333333;
@@ -283,7 +283,7 @@ hr {
 	{
 		overflow: hidden;
 		height: 500px;
-		background: url(images/pic01.jpg) no-repeat center;
+		background: url(images/Vegetables.jpg) no-repeat center;
 		background-size: cover;
 	}
 	
@@ -331,10 +331,10 @@ hr {
 
 #menu a:hover, #menu .current_page_item a {
 	text-decoration: none;
+	background: #1abc9c;
 }
 
 #menu .current_page_item a {
-	background: #1abc9c;
 }
 
 /** PAGE */
