@@ -35,7 +35,9 @@ if (!$query) {
 //display results in a table
 ?>
     <!-- all content goes in between these two tags -->
-    <h1>The Vegetable People</h1>
+    <div id="page" class="container">
+        <div id="content">
+    <h1 class="title">The Vegetable People</h1>
     <hr>
 
     <h2>Supplier Details</h2>
@@ -57,7 +59,8 @@ if (!$query) {
     </table>
 
     <p><a href="suppliers.php">Back to Suppliers</a></p>
-
+</div>
+</div>
 <?php
 // clean up resultsets when we're done with them!
 $query->close();
