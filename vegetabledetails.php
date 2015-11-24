@@ -35,7 +35,9 @@ if (!$query) {
 //display results in a table
 ?>
     <!-- all content goes in between these two tags -->
-    <h1>The Vegetable People</h1>
+    <div id="page" class="container">
+        <div id="content">
+    <h1 class="content">The Vegetable People</h1>
     <hr>
 
     <h2>Vegetable Details</h2>
@@ -65,7 +67,8 @@ if (!$query) {
         <input type="button" value="  Delete Veggie  " onclick="confirm_deletion(<?php echo $vegetable_id ?>)">
     </p>
     <p><a href="vegetables.php">Back to Vegetables</a></p>
-
+</div>
+</div>
 <?php
 // clean up resultsets when we're done with them!
 $query->close();
