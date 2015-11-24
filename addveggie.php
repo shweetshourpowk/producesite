@@ -31,8 +31,8 @@ require_once 'php/header.php';
         </tr>
     </table>
     <div class="addVeggie">
-        <input type="submit" value="Add Veggie" />
-        <input type="button" value="Cancel" onclick="window.location.href='vegetables.php'" />
+        <input type="submit" class="button" value="Add Veggie" />
+        <input type="button" class="button" value="Cancel" onclick="window.location.href='vegetables.php'" />
     </div>
 </form>
 
