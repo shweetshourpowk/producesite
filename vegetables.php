@@ -17,7 +17,9 @@ if (!$query) {
 }
 ?>
     <!-- all content goes in between these two tags -->
-    <h1>The Vegetable People</h1>
+    <div id="page" class="container">
+        <div id="content">
+    <h1 class="title">The Vegetable People</h1>
 <hr>
 
     <table class="vegetablelist">
@@ -43,7 +45,8 @@ if (!$query) {
     </table>
 
 <button><a href="addveggie.php">Add veggie</a></button>
-
+</div>
+</div>
     <!-- all content goes in between these two tags -->
     <script src="js/script.js"></script>
 <?php
