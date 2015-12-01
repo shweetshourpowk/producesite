@@ -226,9 +226,8 @@ hr {
 #header-wrapper
 {
 	overflow: hidden;
-	background: url(images/Vegetables.jpg) repeat;
 	background-size: 100%;
-	padding: 6em 0em 2em 0em;
+	padding: 0em 0em 0em 0em;
 	background: #333333;
 }
 
@@ -250,8 +249,7 @@ hr {
 
 	#logo 
 	{
-		width: 500px;
-		height: 100px;
+		
 		margin: 0 auto;
 		padding: 2em 0em;
 		text-transform: uppercase;
