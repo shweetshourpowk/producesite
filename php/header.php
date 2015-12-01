@@ -25,4 +25,4 @@
         </div>
     </div>
 </div>
-<div id="banner"></div>
+
